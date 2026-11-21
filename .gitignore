@@ -1,0 +1,13 @@
+# Rust derleme çıktıları
+/target
+
+# Protokol tersine mühendislik çalışma alanı (USBPcap kayıtları — büyük/özel)
+/usb-yakala/
+
+# Dahili araç notları
+/.hermes/
+
+# Çalışma zamanı dosyaları (LOCALAPPDATA'ya yazılır, buraya düşmesin)
+history.jsonl
+panel.json
+ofb.ini

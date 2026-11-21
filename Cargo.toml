@@ -1,0 +1,18 @@
+[package]
+name = "voidctl"
+version = "0.1.0"
+edition = "2021"
+description = "Corsair Void kulaklik icin minik iCUE alternatifi (pil/sidetone/LED/bip)"
+
+[dependencies]
+hidapi = "2"
+native-windows-gui = { version = "1.0", features = ["rich-textbox"] }
+serde_json = "1"
+tiny_http = "0.12"
+ureq = "3"
+winapi = { version = "0.3", features = ["winuser", "handleapi", "processthreadsapi", "winnt", "winbase", "dwmapi", "libloaderapi", "wingdi", "uxtheme"] }
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
